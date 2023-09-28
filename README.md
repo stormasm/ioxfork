@@ -1,7 +1,13 @@
 
 To bring iox up and running
 
-```shell
+Clean and Wipe this directory prior to running iox
+
+```rust
+/Users/ma/.influxdb_iox
+```
+
+```rust
 alias ioxg='cd ~/j/tmp06/ioxfork'
 alias iox='ioxg; ./target/debug/influxdb_iox'
 alias iox01='iox -vv write company_sensors test_fixtures/lineproto/metrics.lp --host http://localhost:8080'
