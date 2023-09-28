@@ -1,4 +1,14 @@
-# InfluxDB IOx
+
+To bring iox up and running
+
+```shell
+alias ioxg='cd ~/j/tmp06/ioxfork'
+alias iox='ioxg; ./target/debug/influxdb_iox'
+alias iox01='iox -vv write company_sensors test_fixtures/lineproto/metrics.lp --host http://localhost:8080'
+alias iox02='iox query company_sensors "SELECT * FROM cpu LIMIT 10"'
+```
+
+### Legacy Readme
 
 > [!NOTE]
 > This repo will be made private on September 28, 2023. All code has been moved to the InfluxDB repo ([see this commit](https://github.com/influxdata/influxdb/commit/aa458ed1661a9e0ea58e5f999d383c08f8309c36)).
